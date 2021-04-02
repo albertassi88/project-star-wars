@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("https://www10.trf2.jus.br/ccjf/wp-content/uploads/sites/9/2019/10/fundo-01.png");
+    
+}
+
+.logo {
+    height: 100px;
+    padding: 80px;
+    background-image: url("https://static-mh.content.disney.io/starwars/assets/navigation/sw_logo_horiz-04368052e188.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
