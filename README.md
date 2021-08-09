@@ -3,3 +3,6 @@
 
 
 ### Desenvolvido em React JS.
+
+#### Como rodar o projeto
+#### npm start
