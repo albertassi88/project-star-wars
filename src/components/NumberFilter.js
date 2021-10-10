@@ -5,8 +5,14 @@ import RemovedFilterPlanets from './RemovedFilterPlanets';
 
 function NumberFilter() {
     const [column, setColumn] = useState('population');
-    const [arrayColumn, setArrayColumn] = useState(['', 'population', 'orbital_period', 'diameter',
-    'rotation_period', 'surface_water']);
+    const [arrayColumn, setArrayColumn] = useState([
+      '', 
+      'population', 
+      'orbital_period', 
+      'diameter',    
+      'rotation_period', 
+      'surface_water'
+    ]);
     const {
       createFilter, removedFilter,
       filters: { filterByNumericValues },
