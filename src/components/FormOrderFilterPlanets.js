@@ -6,8 +6,21 @@ function OrderFilter() {
     const [selectOrder, selectSetOrder] = useState('');
     const { createOrder } = useContext(TodoContext);
 
-    const order = ["name", "climate", "created", "diameter", "edited", "gravity", "orbital_period",
-    "population", "rotation_period", "surface_water", "terrain", "url", "films"];
+    const order = [
+        "name", 
+        "climate", 
+        "created", 
+        "diameter", 
+        "edited", 
+        "gravity", 
+        "orbital_period",
+        "population", 
+        "rotation_period", 
+        "surface_water", 
+        "terrain", 
+        "url", 
+        "films"
+    ];
 
     function renderOrder() {
         return (
@@ -17,15 +30,20 @@ function OrderFilter() {
                         {order.map((element, index) => <option key={index}>{element}</option>)}                  
                     </select>
                     <input onChange={ ({target}) => radioSetOrder(target.value) } 
-                        type="radio" id="asc" name="order" value="asc" />
+                        type="radio" id="asc" name="order" value="asc" 
+                    />
                     <label for="asc">ASC</label>
                     <input onChange={ ({target}) => radioSetOrder(target.value) } 
-                        type="radio" id="desc" name="order" value="desc" />
+                        type="radio" id="desc" name="order" value="desc" 
+                    />
                     <label for="desc">DESC</label>
-                    <button onClick={() => createOrder(selectOrder, radioOrder)} type="button">Ordenar Filtro</button>
+                    <button 
+                        onClick={() => createOrder(selectOrder, radioOrder)} 
+                        type="button">Ordenar Filtro
+                    </button>
                 </form>             
             </div>          
-        )
+        );
     }
 
     return (
