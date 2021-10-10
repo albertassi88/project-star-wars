@@ -2,7 +2,7 @@ import React from 'react';
 import TodoProvider from './context/TodoProvider';
 import TablePlanets from './components/TablePlanets';
 import NumberFilter from './components/NumberFilter';
-import FormOrderFilterPlanets from './components/FormOrderFilterPlanets';
+import OrderFilterPlanets from './components/OrderFilterPlanets';
 import './App.css';
 
 function App() { 
@@ -11,7 +11,7 @@ function App() {
       <div className="logo"/>      
       <TodoProvider>
         <NumberFilter/>
-        <FormOrderFilterPlanets />
+        <OrderFilterPlanets />
         <TablePlanets />
       </TodoProvider>
     </div>
