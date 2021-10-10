@@ -54,7 +54,7 @@ function TodoProvider({ children}) {
                 { children }
             </div>            
         </context.Provider>      
-    )
+    );
 }
 
 export default TodoProvider;

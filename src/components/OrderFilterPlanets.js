@@ -9,7 +9,7 @@ function OrderFilter() {
         <div>
             {FormOrderFilterPlanets(createOrder)}    
         </div>
-    )
+    );
 }
 
 export default OrderFilter;

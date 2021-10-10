@@ -24,7 +24,6 @@ tr:nth-child(even) {
     text-align: center;
 }
 
-
 .filters {  
     display: flex;
     flex-direction: row;

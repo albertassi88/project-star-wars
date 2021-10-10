@@ -33,7 +33,7 @@ export default function SearchPlanets() {
         return acc;
       }
     }, resultFilters);
-    return (resultFilters.map((element, index) => {
-        return ElementsPlanets(element, index)
-    }))
+    return (resultFilters.map((element, index) => (
+        ElementsPlanets(element, index)
+    )));
 } 
