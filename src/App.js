@@ -1,7 +1,7 @@
 import React from 'react';
 import TodoProvider from './context/TodoProvider';
 import './App.css';
-import Table from './components/Table';
+import TablePlanets from './components/TablePlanets';
 import NumberFilter from './components/NumberFilter';
 import OrderFilter from './components/OrderFilter';
 
@@ -13,7 +13,7 @@ function App() {
       <TodoProvider>
         <NumberFilter/>
         <OrderFilter />
-        <Table />
+        <TablePlanets />
       </TodoProvider>
     </div>
   );

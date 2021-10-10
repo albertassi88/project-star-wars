@@ -1,13 +1,12 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     height: 100vh;
     background-image: url("https://www10.trf2.jus.br/ccjf/wp-content/uploads/sites/9/2019/10/fundo-01.png");
-    
 }
 
 .logo {

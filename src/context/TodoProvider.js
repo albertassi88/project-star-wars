@@ -15,7 +15,7 @@ function TodoProvider({ children}) {
             setTableApi(data.results);
             setLoading('');
         })
-        .catch((error) => {
+        .catch(() => {
             alert("Ocorreu um erro ao buscar os items");
         });        
     }, []);
@@ -50,9 +50,9 @@ function TodoProvider({ children}) {
 
     return(
         <context.Provider value={ contextValue }>
-        <div>
-            { children }
-        </div>            
+            <div>
+                { children }
+            </div>            
         </context.Provider>      
     )
 }
